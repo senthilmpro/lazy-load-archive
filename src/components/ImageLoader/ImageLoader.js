@@ -37,7 +37,7 @@ const ImageLoader = ({selectedIdentifier}) => {
         getData();
     }, [selectedIdentifier]);
 
-    return imageFiles && imageFiles.map(x => <div>
+    return imageFiles && imageFiles.map(x => 
         <ImageRenderer
         key={x.img}
         url={x.img}
@@ -45,7 +45,7 @@ const ImageLoader = ({selectedIdentifier}) => {
         width={640}
         height={480}
       />
-    </div>)
+    )
         
     ;
 }
