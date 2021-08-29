@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/lazy-load-archive/static/css/main.865bd3e4.chunk.css",
-    "main.js": "/lazy-load-archive/static/js/main.6da63312.chunk.js",
-    "main.js.map": "/lazy-load-archive/static/js/main.6da63312.chunk.js.map",
+    "main.css": "/lazy-load-archive/static/css/main.97d3e0cd.chunk.css",
+    "main.js": "/lazy-load-archive/static/js/main.e6c98e8e.chunk.js",
+    "main.js.map": "/lazy-load-archive/static/js/main.e6c98e8e.chunk.js.map",
     "runtime-main.js": "/lazy-load-archive/static/js/runtime-main.ea9f07a7.js",
     "runtime-main.js.map": "/lazy-load-archive/static/js/runtime-main.ea9f07a7.js.map",
     "static/js/2.9ad91e20.chunk.js": "/lazy-load-archive/static/js/2.9ad91e20.chunk.js",
     "static/js/2.9ad91e20.chunk.js.map": "/lazy-load-archive/static/js/2.9ad91e20.chunk.js.map",
     "index.html": "/lazy-load-archive/index.html",
-    "static/css/main.865bd3e4.chunk.css.map": "/lazy-load-archive/static/css/main.865bd3e4.chunk.css.map",
+    "static/css/main.97d3e0cd.chunk.css.map": "/lazy-load-archive/static/css/main.97d3e0cd.chunk.css.map",
     "static/js/2.9ad91e20.chunk.js.LICENSE.txt": "/lazy-load-archive/static/js/2.9ad91e20.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ea9f07a7.js",
     "static/js/2.9ad91e20.chunk.js",
-    "static/css/main.865bd3e4.chunk.css",
-    "static/js/main.6da63312.chunk.js"
+    "static/css/main.97d3e0cd.chunk.css",
+    "static/js/main.e6c98e8e.chunk.js"
   ]
 }
