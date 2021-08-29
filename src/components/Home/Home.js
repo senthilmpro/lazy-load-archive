@@ -16,9 +16,13 @@ const Home = () => {
     setSelectedList(ev.target.value);
   }
 
+  const loadFirstSite = (data) => {
+    setSelectedList(data[0]);
+  }
+
   return (
     <section>
-      <IdentifierList onChange={onSelectedListChange} />
+      <IdentifierList onChange={onSelectedListChange} loadFirstSite={loadFirstSite} />
       <div className="ImageGallery">
         <ImageLoader selectedIdentifier={selectedList} />
       </div>

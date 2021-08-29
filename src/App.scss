@@ -25,12 +25,12 @@
         grid-template-columns: 1fr 1fr;
       }
 
-      @media only screen and (max-width: 320px) and (min-width: 100px) {
+      @media only screen and (max-width: 420px) and (min-width: 100px) {
         /* For mobile phones: */
         grid-template-columns: 1fr;
       }
 
-    @media only screen  and (max-width: 650px) and (min-width: 320px) {
+    @media only screen  and (max-width: 650px) and (min-width: 420px) {
         /* For mobile phones: */
         grid-template-columns: 1fr;
       }
