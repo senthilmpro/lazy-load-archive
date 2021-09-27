@@ -3,6 +3,10 @@ import classnames from 'classnames';
 import { useIntersection } from './intersectionObserver';
 import './imageRenderer.scss';
 import axios from 'axios';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCopy, faSitemap } from '@fortawesome/free-solid-svg-icons'
+
+
 
 const ImageRenderer = ({ url, thumb, width, height, onImgError }) => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -20,6 +24,17 @@ const ImageRenderer = ({ url, thumb, width, height, onImgError }) => {
   const handleOnLoad = () => {
     setIsLoaded(true);
   };
+
+  const copyImageBBToClipboard = async (ev, url) => {
+    ev.preventDefault();
+    let text = `[IMG]${url}[/IMG]`
+    var dummy = document.createElement("textarea");
+    document.body.appendChild(dummy);
+    dummy.value = text;
+    dummy.select();
+    document.execCommand("copy");
+    document.body.removeChild(dummy);
+  }
 
   const copyImageToClipboard = async (ev, url) => {
     ev.preventDefault();
@@ -97,7 +112,11 @@ const ImageRenderer = ({ url, thumb, width, height, onImgError }) => {
               onError={onError}
             />
             </a>
-            <button onClick={(ev) => copyImageToClipboard(ev,url)} className={"btn-standard"} >Copy Image</button>
+            <div className="button-list">
+              <button onClick={(ev) => copyImageToClipboard(ev,url)} className={"btn-standard"} ><FontAwesomeIcon icon={faCopy} /></button>
+              <button onClick={(ev) => copyImageBBToClipboard(ev,url)} className={"btn-standard"} ><FontAwesomeIcon icon={faSitemap} /></button>
+            </div>
+            
         </>
       )}
     </div>
