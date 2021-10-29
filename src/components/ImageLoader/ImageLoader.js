@@ -22,8 +22,9 @@ const ImageLoader = ({selectedIdentifier}) => {
         const {sourceFiles, dir, server} = sourceData;
         let imgArray = sourceFiles.filter(x => x.format == "JPEG");
         let imgs = imgArray.map(x => ({
-            img: `https://i0.wp.com/${server}/${dir}/${x.name}`,
-            thumb: `https://i0.wp.com/${server}/${dir}/${x.name}?w=320`
+            img: `https://i0.wp.com/${server}${dir}/${x.name}`,
+            thumb: `https://i0.wp.com/${server}${dir}/${x.name}?w=320`,
+            original: `https://${server}${dir}/${x.name}`
         }));
         console.log(imgs);
         setImageFiles(imgs);
@@ -41,6 +42,7 @@ const ImageLoader = ({selectedIdentifier}) => {
         <ImageRenderer
         key={x.img}
         url={x.img}
+        original={x.original}
         thumb={x.thumb}
         width={640}
         height={480}
